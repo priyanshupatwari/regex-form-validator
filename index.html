@@ -1,0 +1,246 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+        integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+
+    <title> Welcome to CredVerify</title>
+</head>
+
+<body>
+    <!-- ---------------------------N A V B A R  S T A R T S---------------------------------------- -->
+    <nav class="sticky-top navbar navbar-dark bg-dark">
+        <a class="navbar-brand" href="#">CredVerify</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarScroll"
+            aria-controls="navbarScroll" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarScroll">
+
+            <ul class="navbar-nav mr-auto my-2 my-lg-0 navbar-nav-scroll" style="max-height: 100px;">
+                <li class="nav-item active">
+                    <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
+                </li>
+            </ul>
+
+            <form class="d-flex">
+                <input class="form-control mr-2" type="search" placeholder="Search" aria-label="Search">
+                <button class="btn btn-outline-success" type="submit">Search</button>
+            </form>
+        </div>
+    </nav>
+    <!-- ---------------------------N A V B A R  E N D S---------------------------------------- -->
+
+    <!------------------------------------- A L E R T   A L E R T    S T A R T S -------------------->
+    <div id="success" class="alert alert-success alert-dismissible fade show" role="alert">
+        <strong>Success!</strong> Your travel request has been successfully submitted
+        <button type="button" class="close" data-dismiss="alert" aria-label="Close">
+            <span aria-hidden="true">×</span>
+        </button>
+    </div>
+    <div id="failure" class="alert alert-danger alert-dismissible fade show" role="alert">
+        <strong>Error!</strong> Your request has not been sent due to errors
+        <button type="button" class="close" data-dismiss="alert" aria-label="Close">
+            <span aria-hidden="true">×</span>
+        </button>
+    </div>
+    <!------------------------------------- A L E R T   A L E R T    E N D S ---------------------->
+
+    <!-- -------------------------------C O N T A I N E R   S T A R T S--------------------------------->
+    <div class="container">
+        <h1 class="text-center"><span class=" badge badge-primary "> CredVerify</span></h1>
+        <h1 class="text-center">CredVerify verifies whether your username, email address and phone number follow correct pattern or not.</h1>
+
+        <form>
+            <div class="form-group">
+                <label for="name">Username</label>
+                <!-------------------------------------------- N  A  M  E   -------------------------------------------->
+                <input type="text" class="form-control" id="name" placeholder="Enter your username">
+                <small id="namevalid" class="form-text text-muted invalid-feedback">
+                    Your username must be 2-10 characters long and should not start with a number
+                </small>
+            </div>
+
+            <div class="form-group">
+                <label for="email">Email address</label>
+                <!-------------------------------------------- E  M  A  I  L -------------------------------------------->
+                <input type="text" class="form-control" id="email" placeholder="Enter your email">
+                <small id="emailvalid" class="form-text text-muted invalid-feedback">
+                    Your email must be a valid email
+                </small>
+            </div>
+            <div class="form-group">
+                <!-------------------------------------------- C  A  R    O  P  T  I  O  N  -------------------------------------------->
+                <label for="car">Select your car</label>
+                <select class="form-control" id="car">
+                    <option>Omni</option>
+                    <option>Maruti 800</option>
+                    <option>Ford Titanium</option>
+                    <option>Audi A4</option>
+                </select>
+            </div>
+            <div class="form-group">
+                <label for="address">Enter your address</label>
+                <!-------------------------------------------- A  D  D  R  E  S  S -------------------------------------------->
+                <textarea class="form-control" name="address" id="address" rows="3"></textarea>
+            </div>
+            <div class="form-group">
+                <label for="address">Enter your phone number</label>
+                <!-------------------------------------------- P  H  O  N  E    N  U  M  B  E  R -------------------------------------------->
+                <input class="form-control" name="phone" id="phone" rows="3">
+                <small id="emailvalid" class="form-text text-muted invalid-feedback">
+                    Your phone number must be 10 digit long
+                </small>
+            </div>
+            <div class="form-group">
+                <label for="exampleFormControlTextarea1">Any other message...</label>
+                <!-------------------------------------------- M  E  S  S  A  G  E   -------------------------------------------->
+                <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
+            </div>
+            <button id="submit" class="btn btn-primary">Submit</button>
+        </form>
+
+    </div>
+    <!-- -------------------------------C O N T A I N E R    E N D S --------------------------------->
+
+    <!---------------------------------- F O O T E R   S T A R T S ---------------------------------->
+    <div class="jumbotron mt-3 mb-0 ">
+        <h1 class="display-4 d-flex justify-content-center">Thanks for using our service</h1>
+    </div>
+    <!---------------------------------- F O O T E R   E N D S   ---------------------------------->
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+        integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+        crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
+        integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
+        crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
+        integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
+        crossorigin="anonymous"></script>
+</body>
+
+</html>
+<script>
+
+    const name = document.getElementById('name');
+    const email = document.getElementById('email');
+    const phone = document.getElementById('phone');
+    let validEmail = false;
+    let validPhone = false;
+    let validUser = false;
+    $('#failure').hide();
+    $('#success').hide();
+
+    // console.log(name, email, phone);
+    // -------------------------------------------- N  A  M  E   --------------------------------------------
+    name.addEventListener('blur', () => {
+        console.log("name is blurred");
+        // Validate name here
+        let regex = /^[a-zA-Z]([0-9a-zA-Z]){1,10}$/; 
+        //->^[a-zA-Z] - must start with `a-z / A-Z`, followed by '0-9 / a-z / A-Z' between {1,10} & end with($)  
+        let str = name.value;
+        console.log(regex, str);
+        if (regex.test(str)) {
+            console.log('Your name is valid');
+            name.classList.remove('is-invalid'); // removes class = 'is-invalid'
+            validUser = true;
+        }
+        else {
+            console.log('Your name is not valid');
+            name.classList.add('is-invalid'); // adds class = 'is-invalid'
+            validUser = false;
+            
+        }
+    })
+    // -------------------------------------------- E  M  A  I  L --------------------------------------------
+    email.addEventListener('blur', () => {
+        console.log("email is blurred");
+        // Validate email here
+        let regex = /^([_\-\.0-9a-zA-Z]+)@([_\-\.0-9a-zA-Z]+)\.([a-zA-Z]){2,7}$/;
+        let str = email.value;
+        console.log(regex, str);
+        if (regex.test(str)) {
+            console.log('Your email is valid');
+            email.classList.remove('is-invalid'); // removes class = 'is-invalid'
+            validEmail = true;
+        }
+        else {
+            console.log('Your email is not valid');
+            email.classList.add('is-invalid'); // adds class = 'is-invalid'
+            validEmail = false;
+        }
+    })
+    
+    // -------------------------------------------- P  H  O  N  E    N  U  M  B  E  R --------------------------------------------
+    phone.addEventListener('blur', () => {
+        console.log("phone is blurred");
+        // Validate phone here
+        let regex = /^([0-9]){10}$/; ///^ ([0-9]){10} $/
+        // -> `([0-9]){10}`- must be a number for 10 times, should Start(^) with it and End($) with it 
+        let str = phone.value;
+        console.log(regex, str);
+        if (regex.test(str)) {
+            console.log('Your phone is valid');
+            phone.classList.remove('is-invalid'); // removes class = 'is-invalid'
+            validPhone = true;
+        }
+        else {
+            console.log('Your phone is not valid');
+            phone.classList.add('is-invalid'); // adds class = 'is-invalid'
+            validPhone = false;
+            
+        }
+    })
+
+    // -----------------------------A L E R T   A L E R T    S T A R T S-----------------------------
+    let submit = document.getElementById('submit');
+    submit.addEventListener('click', (e) => {
+        e.preventDefault();
+
+        console.log('You clicked on submit');
+        console.log(validEmail, validUser, validPhone);
+
+        // Submit your form here
+
+        let success = document.getElementById('success');
+        let failure = document.getElementById('failure');
+
+        if (validEmail && validUser && validPhone) {
+            console.log('Phone, email and user are valid. Submitting the form');
+            
+            // success.classList.add('show');
+            // failure.classList.remove('show'); 
+
+            // ---------------------------------------J Q U E R Y---------------------------------------
+            $('#failure').alert('close');
+
+            // $('#failure').hide();// sets elememt with id #failure : style="display:none"
+            $('#success').show();
+
+        }
+        else {
+            console.log('One of Phone, email or user are not valid. Hence not submitting the form. Please correct the errors and try again');
+
+            // failure.classList.add('show');
+            // success.classList.remove('show');
+
+            // ---------------------------------------J Q U E R Y---------------------------------------
+            $('#success').alert('hide');
+
+            // $('#success').hide(); //sets elememt with id #success : style="display:none"
+            $('#failure').show();
+        }
+
+
+
+    })
+
+</script>
